@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/openFileButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="291dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="388dp"
+        android:text="Create File"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="278dp"
+        android:layout_height="137dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Introduce texto para cifrar (sin maldad)"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitle" />
+
+    <EditText
+        android:id="@+id/inputTitle"
+        android:layout_width="278dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Nombre del fichero"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="272dp"
+        android:layout_height="321dp"
+        android:text="Open a file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createButton" />
+
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="152dp"
+        android:text="Decrypt File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
